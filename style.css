@@ -1,45 +1,88 @@
-.aniket{
-    height: 400px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.aniket {
+    max-width: 90%;
     width: 700px;
     background-color: antiquewhite;
-    margin-top: 8%;
-    margin-left: 23%;
-    border:.5px solid black;
+    padding: 20px;
+    border: 0.5px solid black;
     border-radius: 5px;
-}
-#nomads{
-    margin-top: 50px;
-    margin-left: 235px;
-}
-#run{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    justify-content: center;
-    font-size: 1.5rem;
 }
-.btn{
-    text-align: center;
-    justify-content: center;
-    font-size: 1.5rem;
+
+#nomads {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 224px;
+    height: auto;
+    display: block;
 }
-#yes-btn{
-    margin-right: 70px;
-    height:25px;
-    width:70px;
+
+#run {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.btn button {
+    height: 40px;
+    width: 90px;
     border-radius: 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border:1px solid black;
 }
-#yes-btn:hover{
+
+#yes-btn:hover {
     background-color: rgb(41, 244, 41);
-    color:white;
-}
-#no-btn{
-    
-    height:25px;
-    width:70px;
-    border-radius: 20px;
-
+    color: white;
 }
 
-#no-btn:hover{
+#no-btn:hover {
     background-color: red;
-    color:white;
+    color: white;
+}
+
+#no-btn {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .aniket {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #run {
+        font-size: 1.2rem;
+    }
+
+    .btn button {
+        width: 70px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #run {
+        font-size: 1rem;
+    }
+
+    .btn button {
+        width: 60px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
 }
